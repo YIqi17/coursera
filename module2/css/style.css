@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#heading{
+    text-align: center;
+    font-size: 40px;
+    padding:2%;
+    font-style: bold;
+}
+
+body{
+    margin:0px;
+    width:100vw;
+}
+.textbox{
+    display: grid;
+    grid-template-columns: 16.666%, 16.666%, 16.666%, 16.666%, 16.666%, 16.666%;
+    border:1px;
+    margin:10px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+section{
+    font-style: bold;
+    float: left;
+    margin:10px;
+}
+h1{
+    font-size: 1.25em;
+    float:right;
+    position: relative;
+    border: 1px solid black;
+    margin:0px;
+    border-bottom-width: 2.5px;
+    border-left-width: 2.5px;
+    padding:5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-1 h1{
+    background-color: rgb(166, 233, 112);
+}
+.section-2 h1{
+    background-color: rgb(255, 232, 103)
+}
+.section-3 h1{
+    background-color: rgb(255, 124, 141)
+}
+.section-1{
+    background-color: rgb(202, 255, 159);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 1px solid black;
+}
+.section-2{
+    background-color: rgb(255, 246, 124);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    border: 1px solid black;
+    
+}
+.section-3{
+    background-color: rgb(255, 180, 180);
+    grid-column-start: 5;
+    grid-column-end: 7;
+    border: 1px solid black;
+    
+}
+p{
+    margin-top: 50px;
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 991px){
+    .section-1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .section-2{
+        grid-column-start: 4;
+        grid-column-end: 7;
+    }
+    .section-3{
+        grid-column-start: 1;
+        grid-column-end:7;
+    }
+}
+@media (max-width: 767px) {
+    .section-1{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    .section-2{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    .section-3{
+        grid-column-start: 1;
+        grid-column-end:7;
+    }
+    .textbox{
+        margin:30px
+    }
+}
